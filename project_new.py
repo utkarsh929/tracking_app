@@ -113,14 +113,14 @@ class TimeTrackerApp:
         self.bold_font = tkFont.Font(family="Helvetica", size=12, weight="bold")
 
         # Create a canvas with a solid pale blue background
-        self.canvas = Canvas(master, width=1500, height=900, bg="#add8e6")  # Increased size and pale blue background
+        self.canvas = Canvas(master, width=1500, height=900, bg="#add8e6")  
         self.canvas.pack(fill="both", expand=True)
 
         # Full screen mode
         self.master.attributes('-fullscreen', True)
 
         # Larger Rounded Frame for Interval Input
-        self.interval_frame_bg = draw_rounded_rectangle(self.canvas, 300, 100, 1200, 300, radius=20, fill='#FFFFE0', outline='#FFFFE0')  # Yellow background
+        self.interval_frame_bg = draw_rounded_rectangle(self.canvas, 300, 100, 1200, 300, radius=20, fill='#FFFFE0', outline='#FFFFE0')  
         self.interval_frame = Frame(self.canvas, bg='#FFFFE0')
         self.canvas.create_window(750, 200, window=self.interval_frame)
 
@@ -146,7 +146,7 @@ class TimeTrackerApp:
         self.update_button.pack(side='left', padx=10)
 
         # Larger Rounded Frame for Status Bar
-        self.status_frame_bg = draw_rounded_rectangle(self.canvas, 300, 600, 1200, 700, radius=20, fill='#FFFFE0', outline='#FFFFE0')  # Yellow background
+        self.status_frame_bg = draw_rounded_rectangle(self.canvas, 300, 600, 1200, 700, radius=20, fill='#FFFFE0', outline='#FFFFE0')  
         self.status_frame = Frame(self.canvas, bg='#FFFFE0')
         self.canvas.create_window(750, 650, window=self.status_frame)
 
